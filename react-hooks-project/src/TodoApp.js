@@ -9,10 +9,11 @@ import Grid from '@material-ui/core/Grid';
 import UseTodoState from './hooks/UseTodoState';
 
 
-function TodoApp(){
-    const initialTodos = [{id: 1, task: 'Pet a Monkey', completed: false}]
 
-    const { todos, addTodo, removeTodo, toggleTodo, editTodo} = UseTodoState(initialTodos)
+function TodoApp(){
+    const initialTodos = [{id: 1, task: 'Pet a Monkey', completed: false, priority: 0}]
+
+    const { todos, addTodo, removeTodo, toggleTodo, editTodo, changePriority} = UseTodoState(initialTodos)
 
     useEffect(() => {
         window.localStorage.setItem('todos', JSON.stringify(todos))
@@ -27,10 +28,10 @@ function TodoApp(){
                 </Toolbar>
                 
             </Appbar>
-            <Grid container justify='center' style={{marginTop: '1rem'}} >
-                <Grid item xs={11} md={8} lg={4} >
+            <Grid container justify='center' style={{marginTop: '1rem', minWidth: 720}} >
+                <Grid item xs={11} md={8} lg={6} overflow='auto'>
             <TodoForm addTodo={addTodo}/>
-            <TodoList todos={todos} removeTodo={removeTodo} toggleTodo={toggleTodo} editTodo={editTodo} />
+            <TodoList todos={todos} removeTodo={removeTodo} toggleTodo={toggleTodo} editTodo={editTodo} changePriority={changePriority}/>
             </Grid>
             </Grid>
         </Paper>

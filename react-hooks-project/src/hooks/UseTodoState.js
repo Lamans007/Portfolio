@@ -9,7 +9,7 @@ export default initialTodos => {
     return {
         todos, 
         addTodo: newTodoText => {
-            setTodos([...todos, {id: uuid(), task: newTodoText, completed: false}])
+            setTodos([...todos, {id: uuid(), task: newTodoText, completed: false, priority: 0}])
         },
         removeTodo: todoId => {
             const updatedTodos = todos.filter(todo => todo.id !== todoId);
@@ -20,13 +20,20 @@ export default initialTodos => {
                 todo.id === todoId ? { ...todo, completed: !todo.completed } : todo 
                 );
                 setTodos(updatedTodos);
-    },
-    editTodo: (todoId, newTask) => {
-        const updatedTodos = todos.map(todo => 
-            todo.id === todoId ? { ...todo, task: newTask } : todo 
-            );
-            setTodos(updatedTodos);
+        },
+        editTodo: (todoId, newTask) => {
+            const updatedTodos = todos.map(todo => 
+                todo.id === todoId ? { ...todo, task: newTask } : todo 
+                );
+                setTodos(updatedTodos);
+        },
+        changePriority: (todoId, val) => {
+            const updatedTodos = todos.map(todo => 
+                todo.id === todoId ? { ...todo, priority: (todo.priority + val < 1) ? 0 : todo.priority + val } : todo
+                );
+                setTodos(updatedTodos);
         }
+        
     }
 }
 
