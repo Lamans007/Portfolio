@@ -7,7 +7,7 @@ function Navbar(props) {
 
   return (
     <div style={styles.navbar}>
-        <p>Hi there <span style={styles.sp}>Pony</span> </p>
+        <p>Hi there </p>
     </div>
   );
 }

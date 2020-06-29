@@ -85,7 +85,7 @@ export default class Project1 extends Component {
         const {num, start, finish, distance} = this.state;
         return (
             <div>
-                <h3>Travelling Salesman graph</h3>
+                <h3>Travelling Salesman Graph</h3>
                 <p>Click to add cities</p>
                 <canvas onMouseDown={this.handleMouseDown} ref='canvas' style={{border: '2px solid black'}}width={450} height={450}>Travelling salesman graph</canvas>
                 
