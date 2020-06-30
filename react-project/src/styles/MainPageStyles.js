@@ -10,8 +10,8 @@ export default {
         textIndent: '50px',
         padding: '0 25px',
         width: '100%',
-        paddingTop: '20px'
-
+        paddingTop: '20px',
+        minHeight: '800px'
     },
     sp: {
         fontSize: '2rem'

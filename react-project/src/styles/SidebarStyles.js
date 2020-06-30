@@ -9,7 +9,7 @@ export default createUseStyles({
         flexWrap: 'wrap',
         height: '800px',
         alignItems: 'center',
-        backgroundColor: '#f5fafa',
+        backgroundColor: '#f1f1f1',
         [sizes.down('md')]: {
     
             display: 'none',

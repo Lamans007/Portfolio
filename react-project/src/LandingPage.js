@@ -12,8 +12,9 @@ function LandingPage() {
     const classes = styles()
 
   return (
+    // < classname={classes.outer}>
     <div className={classes.app}>
-
+      
     <Navbar/>
 
     <main style={styles.main}>
@@ -23,6 +24,8 @@ function LandingPage() {
     <MainPage/>
     </main>
     </div>
+
+    // </div>
   );
 }
 

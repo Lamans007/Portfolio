@@ -3,14 +3,16 @@ import { createUseStyles } from 'react-jss';
 
 export default createUseStyles({
     app: {
+        boder: '2px solid black',
         position: 'absolute',
         display: 'flex',
-        overflowY: 'auto',
+        overflowY: 'visible',
         flexDirection: 'column',
-        flexWrap: 'scroll',
+        flex: '1 5 100%',
         boxSizing: 'content-box',
-        height: '100%',
-        alignSelf: 'center',
+        backgroundColor: 'inherit',
+        // height: '100vh',
+        // minHeight: '1100px',
         justifyContent: 'center',
         [sizes.up('xl')]: {
     
@@ -39,7 +41,13 @@ export default createUseStyles({
             },
         
     },
-    main: {
-        
-    }
+    // outer: {
+    //     border: '2px solid black',
+    //     height: '100%',
+    //     width: '100%',
+    //     display: 'box',
+    //     overflow: 'auto',
+    //     justifyContent: 'center',
+    //     alignItems: 'center'
+    // }
 })
