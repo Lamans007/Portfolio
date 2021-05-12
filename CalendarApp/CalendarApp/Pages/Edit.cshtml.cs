@@ -16,13 +16,16 @@ namespace CalendarApp.Pages
         private readonly CalendarAppContext _context;
         private readonly CalendarAppContext _context2;
 
+
         public EditModel(CalendarAppContext context, CalendarAppContext context2)
         {
             _context = context;
             _context2 = context2;
+
         }
         public List<Activity> Activities { get; set; } 
         public CurrentDay DayToEdit { get; set; } 
+        public Activity Activity { get; set; }
 
         public async Task OnGetAsync(int id)
         {
@@ -36,8 +39,12 @@ namespace CalendarApp.Pages
 
             
             Activities = await activities.ToListAsync();
-            
+            TempData["ID"] = id;
+
+
         }
+
+
     }
 }
 

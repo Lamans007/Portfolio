@@ -2,8 +2,10 @@
 @model CalendarApp.Pages.EditModel
 
 
-<h2>@Model.DayToEdit.Flag</h2>
-<h3>My Activities</h3>
+<h4 style="color:orangered">@Model.DayToEdit.Flag</h4>
+<hr />
+<h3>Today's Activities</h3>
+
 
 
 <table class="table">
@@ -41,7 +43,11 @@
                         <a class="btn btn-secondary" asp-page="/Shared/DeleteActivity" asp-route-id="@c.ID">Delete</a>
                     </td>
                 </tr>
-                }
             }
+        }
     </tbody>
 </table>
+
+
+
+

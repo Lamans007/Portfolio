@@ -39,7 +39,8 @@ namespace CalendarApp.Data
                 CurrentDays[i] = new CurrentDay { ID = i+1, CurrentDate = StartThisYear.AddDays(i)};
             }
 
-            CurrentDays[111].Flag = "Your Birthday!";
+
+            CurrentDays[131].Flag = "Happy Birthday!";
 
             foreach (CurrentDay c in CurrentDays)
             {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\CalendarApp\\CalendarApp\\CalendarApp.csproj": {}
+    "C:\\Users\\User\\source\\repos\\Portfolio\\New folder\\CalendarApp\\CalendarApp\\CalendarApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\CalendarApp\\CalendarApp\\CalendarApp.csproj": {
+    "C:\\Users\\User\\source\\repos\\Portfolio\\New folder\\CalendarApp\\CalendarApp\\CalendarApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\CalendarApp\\CalendarApp\\CalendarApp.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Portfolio\\New folder\\CalendarApp\\CalendarApp\\CalendarApp.csproj",
         "projectName": "CalendarApp",
-        "projectPath": "C:\\Users\\User\\source\\repos\\CalendarApp\\CalendarApp\\CalendarApp.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\Portfolio\\New folder\\CalendarApp\\CalendarApp\\CalendarApp.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\CalendarApp\\CalendarApp\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\Portfolio\\New folder\\CalendarApp\\CalendarApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

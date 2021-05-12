@@ -68,9 +68,11 @@ namespace CalendarApp.Pages.Shared
                     throw;
                 }
             }
-            
 
-            return RedirectToPage("/Index");
+            int id = Convert.ToInt32(TempData["ID"]);
+           // return RedirectToPage("/Edit/id");
+            return RedirectToPage("../Edit", new { id = id });
+
         }
 
         private bool ActivityExists(int id)
